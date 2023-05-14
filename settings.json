@@ -1,0 +1,359 @@
+{
+    // Editor general
+    "files.insertFinalNewline": true,
+    "prettier.requireConfig": true,
+    "cSpell.enabled": false,
+    "extensions.ignoreRecommendations": true,
+    "editor.wordWrapColumn": 140,
+    "prettier.printWidth": 140,
+    "editor.minimap.maxColumn": 140,
+    "prettier.tabWidth": 4,
+    "editor.detectIndentation": false,
+    "editor.cursorSurroundingLines": 8, // amount of vertical lines until left until the editor window moves upon cursor movement
+    "editor.mouseWheelZoom": true, // zoom ONLY font size, not the entire window, as opposed to ctrl +/-
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.linkedEditing": true,
+    "editor.formatOnSave": true,
+    "editor.stickyScroll.enabled": true,
+    "editor.rulers": [
+        {
+            "column": 140,
+            "color": "#a5ffa1"
+        }
+    ],
+    "explorer.confirmDelete": false,
+    "workbench.iconTheme": "material-icon-theme", // angular icon support
+    "http.proxySupport": "off", // fixes some esoteric warning in settings.json
+    "redhat.telemetry.enabled": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "keyboard.dispatch": "keyCode",
+    "files.exclude": {
+        "**/.apt_generated": true,
+        "**/.apt_generated_tests": true,
+        "**/.classpath": true,
+        "**/.metadata": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.sonarlint": true,
+        "**/node_modules": false,
+        "**/RemoteSystemsTempFiles": true,
+        "**/target": true
+    },
+    "github.copilot.enable": {
+        "*": true,
+        "yaml": false,
+        "plaintext": true,
+        "markdown": true,
+        "scminput": false,
+        "javascript": true,
+        "typescript": true,
+        "html": true
+    },
+    "npm.keybindingsChangedWarningShown": true,
+    // Font quick change
+    "editor.fontFamily": "'BitstreamVeraSansMono Nerd Font Mono', 'BitstreamVeraSansMono Nerd Font Mono', monospace",
+    // "editor.fontFamily": "'Fira Code', 'monospace', monospace",
+    // "editor.fontFamily": "monospace",
+    // "editor.fontFamily": "'Fira Code'",
+    // "editor.fontFamily": "Calibri",
+    // Git
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.suggestSmartCommit": false,
+    "gitlens.defaultTimeFormat": "k:mm",
+    "gitlens.defaultDateShortFormat": "D.M. YYYY",
+    "gitlens.defaultDateFormat": "D.M. YYYY, k:mm",
+    "gitlens.defaultDateStyle": "absolute",
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.views.branches.branches.layout": "list",
+    // Languages - clb settings/vscode defaults
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features",
+        "editor.suggest.insertMode": "insert" //FIXME: this fixes deleting " on file-specific-word-completion, but adds extra ] on angular property bindings
+    },
+    // Languages - others
+    "css.lint.unknownAtRules": "ignore", // tailwind fix
+    "totalTypeScript.hiddenTips": [
+        "basic-types",
+        "ts-object-type"
+    ],
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "java.format.settings.url": "c:\\JAVA\\IDE\\CLB_CODE_FMT_SETTINGS_E36.xml ",
+    "[css]": { // FIXME: possibly different than clb
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "java.project.resourceFilters": [
+        "node_modules",
+        "\\.git",
+        "\\.apt_generated",
+        "\\.apt_generated_tests"
+    ],
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "[shellscript]": {
+        "editor.defaultFormatter": "foxundermoon.shell-format"
+    },
+    "totalTypeScript.hideAllTips": false,
+    "totalTypeScript.hideBasicTips": false,
+    // "[html]": {
+    //     "editor.defaultFormatter": "esbenp.prettier-vscode",
+    //     "editor.formatOnSave": true
+    // },
+    // "[typescript]": {
+    //     "editor.defaultFormatter": "esbenp.prettier-vscode",
+    //     "editor.formatOnSave": true
+    // },
+    // Theme - uses tokyo night storm as a base
+    "workbench.colorTheme": "Tokyo Night Storm",
+    "editor.tokenColorCustomizations": {
+        "comments": "#65ad72"
+    },
+    // All backgrounds should be #1E2030, main dividers #00fff2, secondary divider ##7fa5be
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#1aa3ff",
+        "statusBar.noFolderBackground": "#1aa3ff",
+        "statusBar.debuggingBackground": "#1aa3ff",
+        "statusBar.foreground": "#434C5E",
+        "statusBar.debuggingForeground": "#434C5E",
+        "editor.background": "#1E2030",
+        "sideBar.background": "#1E2030",
+        "selection.background": "#005e51",
+        "focusBorder": "#7fa5be",
+        "tab.border": "#00fff2",
+        "editorGroup.border": "#00fff2",
+        "editorGroupHeader.tabsBorder": "#00fff2",
+        "tab.hoverBorder": "#ff0022",
+        "sideBySideEditor.horizontalBorder": "#ff0022",
+        "sideBySideEditor.verticalBorder": "#ff0022",
+        "editor.findMatchHighlightBorder": "#7fa5be",
+        "panel.border": "#7fa5be",
+        "titleBar.border": "#7fa5be",
+        "menu.border": "#7fa5be",
+        "sideBar.border": "#7fa5be",
+        "tab.activeBackground": "#003605",
+        "contrastBorder": "#7fa5be",
+        "contrastActiveBorder": "#7fa5be"
+    },
+    // Zen mode
+    "zenMode.hideTabs": false,
+    "zenMode.hideLineNumbers": false,
+    "zenMode.hideStatusBar": false,
+    // Vim
+    // "whichkey.delay": 0,
+    "vim.smartRelativeLine": true,
+    "vim.leader": "<Space>",
+    "vim.useSystemClipboard": true,
+    "vim.scroll": 2,
+    "vim.easymotion": true,
+    "vim.highlightedyank.enable": true,
+    "vim.highlightedyank.duration": 500,
+    // "vim.foldfix": true, // vim.foldfix true slows down motions and breaks bar color - supposedly fixed by extensions.experimental.affinity, but thats just blatantly not true
+    "extensions.experimental.affinity": {
+        "vscode.vim": 1
+    },
+    "vim.statusBarColorControl": true,
+    "vim.statusBarColors.normal": [
+        // default is "#8FBCBB", no clue what the color on the second line is
+        "#A3C7C6",
+        "#434C5E"
+    ],
+    "vim.statusBarColors.insert": "#a5ffa1",
+    "vim.statusBarColors.visual": "#B48EAD",
+    "vim.statusBarColors.visualline": "#B48EAD",
+    "vim.statusBarColors.visualblock": "#A3BE8C",
+    "vim.statusBarColors.replace": "#D08770",
+    "vim.statusBarColors.commandlineinprogress": "#1aa3ff",
+    "vim.statusBarColors.searchinprogressmode": "#FAFF64",
+    "vim.statusBarColors.easymotionmode": "#007ACC",
+    "vim.statusBarColors.easymotioninputmode": "#007ACC",
+    "vim.statusBarColors.surroundinputmode": "#007ACC",
+    "vim.insertModeKeyBindingsNonRecursive": [
+        {
+            "before": [ // enter normal mode with jk
+                "j",
+                "k"
+            ],
+            "after": [
+                "<ESC>"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [ // make J stronger
+                "J"
+            ],
+            "after": [
+                "4",
+                "j"
+            ]
+        },
+        {
+            "before": [ // make K stronger
+                "K"
+            ],
+            "after": [
+                "4",
+                "k"
+            ]
+        },
+        {
+            "before": [ // join lines with leader j, to replace old J functionality
+                "<Leader>",
+                "j"
+            ],
+            "after": [
+                "J"
+            ]
+        },
+        {
+            "before": [
+                "<C-h>" // move between splits with ctrl+hl
+            ],
+            "after": [
+                "<C-w>",
+                "h"
+            ]
+        },
+        {
+            "before": [
+                "<C-l>"
+            ],
+            "after": [
+                "<C-w>",
+                "l"
+            ]
+        },
+        {
+            "before": [ // move between tabs with ctrl+hl
+                "<S-l>"
+            ],
+            "commands": [
+                ":tabnext"
+            ]
+        },
+        {
+            "before": [
+                "<S-h>"
+            ],
+            "commands": [
+                ":tabprev"
+            ]
+        },
+        {
+            "before": [ // close all tabs but the current working one
+                "<Leader>",
+                "t",
+                "o"
+            ],
+            "commands": [
+                ":tabo"
+            ]
+        },
+        {
+            "before": [ // use <leader>e to open/close the explorer by replacing ctrl+b - ctrl+b jumps view one page up
+                "<Leader>",
+                "e"
+            ],
+            "commands": [
+                ":ToggleExplorer"
+            ]
+        },
+        {
+            "before": [ // also leader e toggle sidebar, to make sure it works in all situations
+                "leader",
+                "e"
+            ],
+            "commands": [
+                "workbench.action.toggleSidebarVisibility"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "s"
+            ],
+            "commands": [
+                "vspacecode.space"
+            ]
+        },
+        {
+            "before": [
+                ","
+            ],
+            "commands": [
+                "vspacecode.space",
+                {
+                    "command": "whichkey.triggerKey",
+                    "args": "m"
+                }
+            ]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<leader>",
+                "s"
+            ],
+            "commands": [
+                "vspacecode.space"
+            ]
+        },
+        {
+            "before": [
+                ","
+            ],
+            "commands": [
+                "vspacecode.space",
+                {
+                    "command": "whichkey.triggerKey",
+                    "args": "m"
+                }
+            ]
+        },
+        {
+            "before": [ // make J stronger
+                "J"
+            ],
+            "after": [
+                "4",
+                "j"
+            ]
+        },
+        {
+            "before": [ // make K stronger
+                "K"
+            ],
+            "after": [
+                "4",
+                "k"
+            ]
+        },
+        {
+            "before": [ // join lines with leader j
+                "<Leader>",
+                "j"
+            ],
+            "after": [
+                "J"
+            ]
+        }
+    ],
+}
